@@ -4,8 +4,12 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/squiggle.rb
+lib/squiggle/base.rb
+lib/squiggle/chunk_parser.rb
+lib/squiggle/domain_parser.rb
+lib/squiggle/log_line.rb
+lib/squiggle/squid_standard_parser.rb
 script/console
 script/destroy
 script/generate
 test/test_helper.rb
-test/test_squiggle.rb

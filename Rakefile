@@ -15,11 +15,10 @@ Hoe.plugin :newgem
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
 $hoe = Hoe.spec 'squiggle' do
-  self.developer 'FIXME full name', 'FIXME email'
+  self.developer 'Daniel Draper', 'daniel@netfox.com'
   self.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
   self.rubyforge_name       = self.name # TODO this is default value
-  self.extra_deps           = [['domainatrix'], ['active_support', "~> 2.3.10"]]
-
+  self.extra_deps           = [['domainatrix'], ['activesupport', "~> 3.0.3"]]
 end
 
 require 'newgem/tasks'

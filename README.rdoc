@@ -4,29 +4,29 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Log line parser
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+Used for NetFox Agent
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+TODO
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Active Support >= 3.0.3
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2011 FIXME full name
+Copyright (c) 2011 Daniel Draper, NetFox
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
