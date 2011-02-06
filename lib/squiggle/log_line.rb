@@ -4,7 +4,7 @@ require 'uri'
 module Squiggle
   class LogLine
 
-    @@domain_parser = DomainParser.new("lib/effective_tld_names.dat")
+    @@domain_parser = DomainParser.new(File.dirname(__FILE__) +  "/../../lib/effective_tld_names.dat")
 
     attr_accessor :bytes
     attr_accessor :cache_status
