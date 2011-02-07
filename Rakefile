@@ -1,5 +1,5 @@
 require 'rubygems'
-gem 'activesupport', '>= 3.0.3'
+gem 'activesupport', '~> 2.3.10'
 gem 'hoe', '>= 2.1.0'
 require 'hoe'
 require 'fileutils'

@@ -11,5 +11,5 @@ require 'squiggle/log_line'
 require 'squiggle/squid_standard_parser'
 
 module Squiggle
-  VERSION = '0.0.2'
+  VERSION = '0.0.3'
 end
