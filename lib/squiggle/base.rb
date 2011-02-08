@@ -11,7 +11,7 @@ module Squiggle
         logline.cached = cached?(logline)
         logline.pageview = pageview?(logline)
       else
-        STDERR.puts("INVALID LINE (#{logline.errors}): '#{line}'") unless line.blank?
+        #STDERR.puts("INVALID LINE (#{logline.errors}): '#{line}'") unless line.blank?
       end
       logline
     end

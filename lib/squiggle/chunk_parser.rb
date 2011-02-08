@@ -21,7 +21,7 @@ module Squiggle
       to_parse = @lines.shift
       logline = @parser.parse(to_parse)
       if logline.invalid?
-        STDERR.puts "Line is INVALID"
+        #STDERR.puts "Line is INVALID"
         logline = self.next_line # recurse
       end
       @current_line = logline
