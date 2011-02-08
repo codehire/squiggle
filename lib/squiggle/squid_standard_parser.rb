@@ -23,7 +23,8 @@ module Squiggle
         ll.bytes = toks[4].to_i
         ll.uri = toks[6]
         ll.username = toks[7]
-        ll.cache_sibling = toks[8].try(:split, "/").try(:[], 0)
+        tok8 = toks[8].nil? ? nil : toks[8].split("/")
+        ll.cache_sibling = tok8.nil? ? nil : tok8[0]
         ll.mime_type = toks[9]
       end
     end
