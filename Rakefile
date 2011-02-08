@@ -1,5 +1,5 @@
 require 'rubygems'
-gem 'activesupport', '~> 2.1.0'
+gem 'activesupport', '>= 2.1.0'
 gem 'hoe', '>= 2.1.0'
 require 'hoe'
 require 'fileutils'
@@ -18,7 +18,7 @@ $hoe = Hoe.spec 'squiggle' do
   self.developer 'Daniel Draper', 'daniel@netfox.com'
   self.post_install_message = 'PostInstall.txt' # TODO remove if post-install message not required
   self.rubyforge_name       = self.name # TODO this is default value
-  self.extra_deps           = [['domainatrix'], ['activesupport', "~> 3.0.3"]]
+  self.extra_deps           = [['domainatrix'], ['activesupport', ">= 2.1.0"]]
 end
 
 require 'newgem/tasks'

@@ -30,10 +30,11 @@ module Squiggle
 
     # Return the time in the client's time zone
     def parse_timestamp(str)
-      # Parse the epoch seconds into UTC (assumes Time.zone set to UTC in environment)
+      # Parses the timestamp into localtime
       t = Time.at(str.gsub(/^L/, '').to_i)
+      # TODO: Right now this will only work with the NFAgent - can't be used on the server as we can't translate to an arbitrary TZ
       # Return the time zone in the clients TZ
-      t.in_time_zone(@time_zone)
+      # t.in_time_zone(@time_zone)
     end
   end
 end
