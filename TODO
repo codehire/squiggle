@@ -1,0 +1,2 @@
+* Can only parse time stamps in the system local timezone at the moment
+* Need to be able to enable or disable debugging out put
